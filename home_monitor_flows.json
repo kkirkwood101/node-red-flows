@@ -1,0 +1,2994 @@
+[
+    {
+        "id": "eec0c63d.a292b8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7e4edf6c.b440d",
+        "type": "tab",
+        "label": "Flow 2"
+    },
+    {
+        "id": "166b64b2.499b6b",
+        "type": "tab",
+        "label": "Flow 3"
+    },
+    {
+        "id": "c0f48f2e.50449",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.1.132",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "fbd81dc2.1dd11",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c38b5de0.08e45",
+        "type": "ui_group",
+        "name": "Bathroom",
+        "tab": "52755a1c.f41ef4",
+        "order": 3,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "a80ce50a.e6c408",
+        "type": "ui_group",
+        "name": "Kitchen",
+        "tab": "52755a1c.f41ef4",
+        "order": 5,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "b3747fff.0d073",
+        "type": "ui_group",
+        "name": "Living Room",
+        "tab": "52755a1c.f41ef4",
+        "order": 6,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "81eb75ad.8d5628",
+        "type": "ui_group",
+        "name": "Workshop",
+        "tab": "52755a1c.f41ef4",
+        "order": 7,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "f6d66f88.9c22f",
+        "type": "ui_group",
+        "name": "Office",
+        "tab": "52755a1c.f41ef4",
+        "order": 4,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "aa8051bb.d0602",
+        "type": "ui_group",
+        "name": "Garage",
+        "tab": "52755a1c.f41ef4",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "52755a1c.f41ef4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": "1"
+    },
+    {
+        "id": "f6fd8732.bd5f08",
+        "type": "mqtt-broker",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "klk-brg3131",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "fe69b9f5.f2a7d8",
+        "type": "ui_group",
+        "name": "Test Time",
+        "tab": "760333ec.d2277c",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "760333ec.d2277c",
+        "type": "ui_tab",
+        "name": "External",
+        "icon": "dashboard"
+    },
+    {
+        "id": "d6bf8ccb.86918",
+        "type": "wemo-dev",
+        "device": "221622K010016A",
+        "name": "Bedroom light"
+    },
+    {
+        "id": "54d85b28.c4cdb4",
+        "type": "ui_group",
+        "name": "Lights",
+        "tab": "30ed9728.3576f8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "26c4974a.1f3e78",
+        "type": "wemo-dev",
+        "device": "221741K1302CA5",
+        "name": "Kitchen Lights"
+    },
+    {
+        "id": "27dcacac.58d6e4",
+        "type": "wemo-dev",
+        "device": "221622K0100909",
+        "name": "Living room light"
+    },
+    {
+        "id": "bd46af78.ffe18",
+        "type": "wemo-dev",
+        "device": "221741K1300A8B",
+        "name": "Prep room light"
+    },
+    {
+        "id": "f59bfade.0dccd8",
+        "type": "wemo-dev",
+        "device": "221741K130138A",
+        "name": "Back Door light"
+    },
+    {
+        "id": "8be95386.dc5b9",
+        "type": "wemo-dev",
+        "device": "221741K130137F",
+        "name": "Front Door Lights"
+    },
+    {
+        "id": "12923ada.aec6f5",
+        "type": "wemo-dev",
+        "device": "221631K0101F04",
+        "name": "Driveway Lights "
+    },
+    {
+        "id": "60cd15f4.0b930c",
+        "type": "wemo-dev",
+        "device": "221621K01030F2",
+        "name": "Garden lights"
+    },
+    {
+        "id": "c6b92f6a.05b9b",
+        "type": "wemo-dev",
+        "device": "221741K1302CA5",
+        "name": "Kitchen Lights"
+    },
+    {
+        "id": "e97bf898.01de08",
+        "type": "ui_group",
+        "name": "Garden Shed",
+        "tab": "53e47499.ae5dec",
+        "order": 8,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "9de92ee7.67eb4",
+        "type": "ui_group",
+        "name": "Outside",
+        "tab": "52755a1c.f41ef4",
+        "order": 1,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "b90732cb.b8edd",
+        "type": "ui_group",
+        "name": "Green House",
+        "tab": "53e47499.ae5dec",
+        "order": 11,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "53e47499.ae5dec",
+        "type": "ui_tab",
+        "name": "Garden",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "30ed9728.3576f8",
+        "type": "ui_tab",
+        "name": "LIghts",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9706d4e0.503f48",
+        "type": "mqtt in",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "topic": "BRG3131",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c0f48f2e.50449",
+        "x": 60,
+        "y": 280,
+        "wires": [
+            [
+                "73312121.5ddee"
+            ]
+        ]
+    },
+    {
+        "id": "c9f20819.39d678",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Bathroom Temp",
+        "group": "c38b5de0.08e45",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "35",
+        "colors": [
+            "#109da5",
+            "#0cda30",
+            "#ca3838"
+        ],
+        "seg1": "15",
+        "seg2": "28",
+        "x": 1160.5,
+        "y": 312,
+        "wires": []
+    },
+    {
+        "id": "6c195666.6f3278",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Bathroom Humidity",
+        "group": "c38b5de0.08e45",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#cce31c",
+            "#09dd23",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "75",
+        "x": 1171,
+        "y": 347,
+        "wires": []
+    },
+    {
+        "id": "175e8366.53c15d",
+        "type": "switch",
+        "z": "eec0c63d.a292b8",
+        "name": "Route Message by Loc",
+        "property": "payload.Station",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "WS0071",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS0076",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS3203",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "NR0001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS0905",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS0080",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS3201",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS3200",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WS3204",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 9,
+        "x": 680,
+        "y": 520,
+        "wires": [
+            [
+                "ac4f69fb.632b68",
+                "2f699c67.c70674",
+                "2ee30b14.982be4",
+                "961ec48d.191978",
+                "c7d638cf.2cb108",
+                "f30460d7.7c318"
+            ],
+            [
+                "486b7339.4d944c",
+                "c9f20819.39d678",
+                "6c195666.6f3278",
+                "545db3b.919614c"
+            ],
+            [
+                "ad673186.0a89c",
+                "2ee30b14.982be4",
+                "18c54418.6d5d8c",
+                "d9d1ec8d.f227a",
+                "b66d1281.f3c4f",
+                "2deebe8c.d8ad02"
+            ],
+            [
+                "ab32ab9d.882248",
+                "f9e1a6de.78a3a8",
+                "2dc0401c.40458",
+                "dd4e6173.8510a"
+            ],
+            [
+                "b05dc3b7.d8f1",
+                "e6fbdf10.5e72c",
+                "36b2ef91.d5063",
+                "96dc7a29.8a58a8"
+            ],
+            [
+                "2ee30b14.982be4",
+                "1b5732be.9c5a2d",
+                "a1744375.5b677",
+                "94c3dd32.0c8fe",
+                "e73fefc5.4fe0f",
+                "3912b002.87b49"
+            ],
+            [
+                "1c60fee.17c8d01",
+                "71fc40c.9aa11c",
+                "d67c0d41.7f0f9",
+                "262ddd4c.38fd12",
+                "34a18234.7c3a9e",
+                "f2b3f2a7.cdb62"
+            ],
+            [],
+            [
+                "ebe1a4e2.a97808",
+                "927153b2.23894",
+                "68636f8c.3bb22",
+                "5d7de867.104008",
+                "40bb86e4.e60658",
+                "6142e50.7c0271c"
+            ]
+        ]
+    },
+    {
+        "id": "f9e1a6de.78a3a8",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Kitchen Temp",
+        "group": "a80ce50a.e6c408",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#3005af",
+            "#17ce25",
+            "#ca3838"
+        ],
+        "seg1": "15",
+        "seg2": "28",
+        "x": 1180,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "2dc0401c.40458",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Kitchen Humidity",
+        "group": "a80ce50a.e6c408",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#0624ae",
+            "#15d040",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "65",
+        "x": 1190,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "486b7339.4d944c",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "c38b5de0.08e45",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update",
+        "label": "",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1150,
+        "y": 381,
+        "wires": []
+    },
+    {
+        "id": "ab32ab9d.882248",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "a80ce50a.e6c408",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update",
+        "label": "",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1170,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "73312121.5ddee",
+        "type": "json",
+        "z": "eec0c63d.a292b8",
+        "name": "Create JSON Object",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "bcd548c9.f08788"
+            ]
+        ]
+    },
+    {
+        "id": "bcd548c9.f08788",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "Add Local TimeStamp",
+        "func": "var date = new Date();\nvar LocalDate=date.toLocaleTimeString();\n\nmsg.payload.Time=LocalDate;\n/* setup the warning messages for each door we monitor */\nif (msg.payload.hasOwnProperty(\"Station\") && (msg.payload.Door ===\"Open\")) {\n    var StationID=msg.payload.Station;\n    msg.payload.SecsAfterMid=getSecSinceMid(new Date());\nswitch(StationID) {\n    case \"WS0071\":\n        msg.payload.Warning=\"Warning Furnace Room Door is Open\";\n        break;\n    case \"WS0080\":\n        msg.payload.Warning=\"Warning Garage Side Door is Open\";\n        break;\n    case \"TS0105\":\n        msg.payload.Warning=\"Warning Office Door Is Open\";\n        break;\n    \n    default :\n        msg.payload.Warning=StationID;\n        break;\n}\n}\nreturn msg;\nfunction getSecSinceMid(d) {\n  var e = new Date(d);\n  return Math.floor((d - e.setHours(0,0,0,0))/1000);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "175e8366.53c15d",
+                "6fdcbb41.4140d4"
+            ]
+        ]
+    },
+    {
+        "id": "e5968c54.ff6e3",
+        "type": "openweathermap in",
+        "z": "eec0c63d.a292b8",
+        "name": "Sunshine Coast Weather",
+        "lon": "",
+        "lat": "",
+        "city": "Sechelt",
+        "country": "Canada",
+        "language": "en",
+        "x": 180.5,
+        "y": 36,
+        "wires": [
+            [
+                "2133d4f1.bf460c",
+                "2ecab6d7.b0389a",
+                "8e155bed.ec9478",
+                "f6724fe9.c9051",
+                "239df0cd.e573"
+            ]
+        ]
+    },
+    {
+        "id": "2133d4f1.bf460c",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Get Outdoor Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.tempc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 706.5,
+        "y": 77,
+        "wires": [
+            [
+                "6496c141.0360b"
+            ]
+        ]
+    },
+    {
+        "id": "6496c141.0360b",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Outside Temperature",
+        "group": "9de92ee7.67eb4",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{value}}",
+        "min": "-15",
+        "max": "33",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "5",
+        "seg2": "25",
+        "x": 1168.5,
+        "y": 65,
+        "wires": []
+    },
+    {
+        "id": "2ecab6d7.b0389a",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Get WindSpeed",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.windspeed",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 687.5,
+        "y": 115,
+        "wires": [
+            [
+                "136ad2b3.59952d"
+            ]
+        ]
+    },
+    {
+        "id": "136ad2b3.59952d",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "group": "9de92ee7.67eb4",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Wind Speed",
+        "label": "kmph",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "120",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "x": 1146.5,
+        "y": 98,
+        "wires": []
+    },
+    {
+        "id": "9245cd60.392a",
+        "type": "switch",
+        "z": "eec0c63d.a292b8",
+        "name": "Check Email",
+        "property": "alarm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 730,
+        "y": 1200,
+        "wires": [
+            [
+                "881f840e.83ce98",
+                "50fbb23b.6ec2bc"
+            ],
+            [
+                "50fbb23b.6ec2bc"
+            ]
+        ]
+    },
+    {
+        "id": "50fbb23b.6ec2bc",
+        "type": "debug",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "881f840e.83ce98",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Setup Email",
+        "rules": [
+            {
+                "t": "set",
+                "p": "from",
+                "pt": "msg",
+                "to": "kkirkwood@hl14.com",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.Warning",
+                "pt": "msg",
+                "to": "topic",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Warning",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 1260,
+        "wires": [
+            [
+                "dfe186bd.bdd238"
+            ]
+        ]
+    },
+    {
+        "id": "2f1f5bf0.c6e3b4",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "Limit Alarm Notices",
+        "func": "var DoorStatus=msg.payload.Door;\nvar alarm_flag=context.get(\"alarm_flag\");\nif(typeof alarm_flag==\"undefined\") alarm_flag=0;\nvar time_now=getSecSinceMid(new Date());\nvar last_alarm=context.get(\"last_alarm\");\nif(typeof last_alarm==\"undefined\") last_alarm=getSecSinceMid(new Date());\nif (DoorStatus ==\"Open\") {\n    if((time_now-last_alarm)>3600) \n    {\n      msg.alarm=1;\n      alarm_flag=1;\n      context.set(\"last_alarm\",time_now);\n      context.set(\"alarm_flag\",alarm_flag);\n     return msg;\n    } \n} else {\n    alarm_flag=0;\n    msg.alarm=0;\n    context.set(\"alarm_flag\",alarm_flag);\n    return msg;\n}\nfunction getSecSinceMid(d) {\n  var e = new Date(d);\n  return Math.floor((d - e.setHours(0,0,0,0))/1000);\n}",
+        "outputs": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 1140,
+        "wires": [
+            [
+                "9245cd60.392a"
+            ]
+        ]
+    },
+    {
+        "id": "2ee30b14.982be4",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Door Status ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.Warning",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 170,
+        "y": 1160,
+        "wires": [
+            [
+                "2f1f5bf0.c6e3b4",
+                "50fbb23b.6ec2bc"
+            ]
+        ]
+    },
+    {
+        "id": "f94075f1.7f0b78",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Get time ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "time",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 698.5,
+        "y": 34,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e155bed.ec9478",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "convert to Pacific TIme",
+        "func": "var today = new Date();\nvar time = today.getHours() + \":\" + today.getMinutes() + \":\" + today.getSeconds();\nmsg.time=time;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 464.5,
+        "y": 36,
+        "wires": [
+            [
+                "f94075f1.7f0b78"
+            ]
+        ]
+    },
+    {
+        "id": "f6724fe9.c9051",
+        "type": "debug",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "true",
+        "x": 1130,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e6fbdf10.5e72c",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Living Room Temp",
+        "group": "b3747fff.0d073",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#000cb3",
+            "#00e639",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "28",
+        "x": 1170,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "36b2ef91.d5063",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Living Room Humidity",
+        "group": "b3747fff.0d073",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#dce925",
+            "#26e600",
+            "#ca3838"
+        ],
+        "seg1": "35",
+        "seg2": "65",
+        "x": 1180,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "961ec48d.191978",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Workshop Temp",
+        "group": "81eb75ad.8d5628",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#005cb3",
+            "#04e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1155,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c7d638cf.2cb108",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Workshop Humidity",
+        "group": "81eb75ad.8d5628",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum | number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b3ad00",
+            "#00e60f",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1167,
+        "y": 194,
+        "wires": []
+    },
+    {
+        "id": "ac4f69fb.632b68",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "81eb75ad.8d5628",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "name": "Last Update",
+        "label": "",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1150,
+        "y": 265,
+        "wires": []
+    },
+    {
+        "id": "b05dc3b7.d8f1",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "b3747fff.0d073",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "name": "Last Update",
+        "label": "",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1150,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2f699c67.c70674",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "81eb75ad.8d5628",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "name": "Workshop Door",
+        "label": "Door :",
+        "format": "{{msg.payload.Door}}",
+        "layout": "row-left",
+        "x": 1161,
+        "y": 228,
+        "wires": []
+    },
+    {
+        "id": "d9d1ec8d.f227a",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Office Temp",
+        "group": "f6d66f88.9c22f",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1150,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b66d1281.f3c4f",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Office Humidity",
+        "group": "f6d66f88.9c22f",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1160,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ad673186.0a89c",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "f6d66f88.9c22f",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update",
+        "label": "",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1150,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a1744375.5b677",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Garage Temp",
+        "group": "aa8051bb.d0602",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temp",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1180,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "94c3dd32.0c8fe",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Garage Humidity",
+        "group": "aa8051bb.d0602",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1190,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1b5732be.9c5a2d",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "aa8051bb.d0602",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "name": "Garage Door",
+        "label": "Door:",
+        "format": "{{msg.payload.Door}}",
+        "layout": "row-left",
+        "x": 1170,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "dfe186bd.bdd238",
+        "type": "e-mail",
+        "z": "eec0c63d.a292b8",
+        "server": "mail.smtp2go.com",
+        "port": "443",
+        "secure": true,
+        "tls": false,
+        "name": "6042120606@msg.telus.com",
+        "dname": "Send Email",
+        "x": 1290,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "6fdcbb41.4140d4",
+        "type": "debug",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1610,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "4f2ff98f.3b3f78",
+        "type": "mqtt in",
+        "z": "7e4edf6c.b440d",
+        "name": "Ferry Arrival Alerts",
+        "topic": "klk/langdale/alert/test/ETA",
+        "qos": "2",
+        "broker": "f6fd8732.bd5f08",
+        "x": 126,
+        "y": 99,
+        "wires": [
+            [
+                "4d0732e9.0ac0dc",
+                "fb0aa7f2.49d078"
+            ]
+        ]
+    },
+    {
+        "id": "4d0732e9.0ac0dc",
+        "type": "ui_text",
+        "z": "7e4edf6c.b440d",
+        "group": "fe69b9f5.f2a7d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Test Time",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 930,
+        "y": 509,
+        "wires": []
+    },
+    {
+        "id": "fb0aa7f2.49d078",
+        "type": "mqtt out",
+        "z": "7e4edf6c.b440d",
+        "name": "Ferry Time",
+        "topic": "FERRY/TIME",
+        "qos": "2",
+        "retain": "",
+        "broker": "c0f48f2e.50449",
+        "x": 556,
+        "y": 70,
+        "wires": []
+    },
+    {
+        "id": "50a3dbce.0b87f4",
+        "type": "mqtt in",
+        "z": "7e4edf6c.b440d",
+        "name": "Test Time Stamp",
+        "topic": "klk/brg3131/testtime",
+        "qos": "2",
+        "broker": "f6fd8732.bd5f08",
+        "x": 149.5,
+        "y": 297,
+        "wires": [
+            [
+                "225a1514.c41fba"
+            ]
+        ]
+    },
+    {
+        "id": "225a1514.c41fba",
+        "type": "ui_text",
+        "z": "7e4edf6c.b440d",
+        "group": "fe69b9f5.f2a7d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "Test Time",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 491.5,
+        "y": 411,
+        "wires": []
+    },
+    {
+        "id": "d628e83e.705c18",
+        "type": "inject",
+        "z": "166b64b2.499b6b",
+        "name": "test timestamp",
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "topic": "klk/brg3131/test",
+        "payload": "",
+        "payloadType": "date",
+        "x": 196.5,
+        "y": 95,
+        "wires": [
+            [
+                "c89ac4af.92d548"
+            ]
+        ]
+    },
+    {
+        "id": "1eefd78f.cc7458",
+        "type": "debug",
+        "z": "166b64b2.499b6b",
+        "name": "Time Stamp",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 493.5,
+        "y": 95,
+        "wires": []
+    },
+    {
+        "id": "81d8e492.bda598",
+        "type": "mqtt out",
+        "z": "166b64b2.499b6b",
+        "name": "brg3131testtime",
+        "topic": "klk/brg3131/testtime",
+        "qos": "2",
+        "retain": "true",
+        "broker": "f6fd8732.bd5f08",
+        "x": 473.5,
+        "y": 222,
+        "wires": []
+    },
+    {
+        "id": "c89ac4af.92d548",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "TIme",
+        "func": "msg.payload = new Date().toISOString().replace(\"Z\", \"\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 191.5,
+        "y": 226,
+        "wires": [
+            [
+                "1eefd78f.cc7458",
+                "81d8e492.bda598"
+            ]
+        ]
+    },
+    {
+        "id": "3beb30e6.167d6",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Bedroom",
+        "topic": "wemo",
+        "device": "d6bf8ccb.86918",
+        "label": "Bedroom light",
+        "x": 185.5,
+        "y": 343,
+        "wires": [
+            [
+                "ab8b9668.f75828"
+            ]
+        ]
+    },
+    {
+        "id": "a43198ae.dbf908",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "Bedroom Light",
+        "label": "Bedroom",
+        "group": "54d85b28.c4cdb4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "Bedroom Light",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 625.5,
+        "y": 338,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "6d25df62.54322"
+            ]
+        ]
+    },
+    {
+        "id": "ab8b9668.f75828",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370.5,
+        "y": 342,
+        "wires": [
+            [
+                "a43198ae.dbf908"
+            ]
+        ]
+    },
+    {
+        "id": "9399d338.b41a4",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 393.5,
+        "y": 388,
+        "wires": [
+            [
+                "c203767f.da4d58"
+            ]
+        ]
+    },
+    {
+        "id": "e7b457bf.646928",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 392.5,
+        "y": 438,
+        "wires": [
+            [
+                "86ed3a1f.eaff08"
+            ]
+        ]
+    },
+    {
+        "id": "3908ca9b.11df96",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 389.5,
+        "y": 484,
+        "wires": [
+            [
+                "17005aa8.c568c5"
+            ]
+        ]
+    },
+    {
+        "id": "92314c99.894c8",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 394.5,
+        "y": 529,
+        "wires": [
+            [
+                "3b3df356.66783c"
+            ]
+        ]
+    },
+    {
+        "id": "b69bde3b.8d7f2",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 391.5,
+        "y": 569,
+        "wires": [
+            [
+                "6209969d.064958"
+            ]
+        ]
+    },
+    {
+        "id": "4b56fee0.ada5",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390.5,
+        "y": 616,
+        "wires": [
+            [
+                "c88f5b23.ad9578"
+            ]
+        ]
+    },
+    {
+        "id": "c203767f.da4d58",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Kitchen",
+        "group": "54d85b28.c4cdb4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 602.5,
+        "y": 395,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "85a09288.2de"
+            ]
+        ]
+    },
+    {
+        "id": "86ed3a1f.eaff08",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Living Room",
+        "group": "54d85b28.c4cdb4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 600.5,
+        "y": 439,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "10ec81f1.c2840e"
+            ]
+        ]
+    },
+    {
+        "id": "17005aa8.c568c5",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Prep Room",
+        "group": "54d85b28.c4cdb4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 594.5,
+        "y": 485,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "4d63f862.07cc28"
+            ]
+        ]
+    },
+    {
+        "id": "3b3df356.66783c",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Back Door",
+        "tooltip": "",
+        "group": "54d85b28.c4cdb4",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 571.5,
+        "y": 532,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "f85f194b.a83cf8"
+            ]
+        ]
+    },
+    {
+        "id": "6209969d.064958",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Front Door",
+        "group": "54d85b28.c4cdb4",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 569.5,
+        "y": 578,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "bc206c12.7d8ec"
+            ]
+        ]
+    },
+    {
+        "id": "c88f5b23.ad9578",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "Driveway",
+        "group": "54d85b28.c4cdb4",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 575.5,
+        "y": 634,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "cdb9d113.bf52e"
+            ]
+        ]
+    },
+    {
+        "id": "3abffb21.3807d4",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Kitchen",
+        "topic": "wemo",
+        "device": "26c4974a.1f3e78",
+        "label": "Kitchen Lights",
+        "x": 168.5,
+        "y": 398,
+        "wires": [
+            [
+                "9399d338.b41a4"
+            ]
+        ]
+    },
+    {
+        "id": "b12bd286.84eb5",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Living Room",
+        "topic": "wemo",
+        "device": "27dcacac.58d6e4",
+        "label": "Living room light",
+        "x": 174.5,
+        "y": 446,
+        "wires": [
+            [
+                "e7b457bf.646928"
+            ]
+        ]
+    },
+    {
+        "id": "ba12ee63.52f15",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Prep Room",
+        "topic": "wemo",
+        "device": "bd46af78.ffe18",
+        "label": "Prep room light",
+        "x": 162.5,
+        "y": 492,
+        "wires": [
+            [
+                "3908ca9b.11df96"
+            ]
+        ]
+    },
+    {
+        "id": "7a9a78e3.cbe8e8",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Back Door",
+        "topic": "wemo",
+        "device": "f59bfade.0dccd8",
+        "label": "Back Door light",
+        "x": 145.5,
+        "y": 540,
+        "wires": [
+            [
+                "92314c99.894c8"
+            ]
+        ]
+    },
+    {
+        "id": "b8693245.51fed",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Front Door",
+        "topic": "wemo",
+        "device": "8be95386.dc5b9",
+        "label": "Front Door Lights",
+        "x": 138.5,
+        "y": 584,
+        "wires": [
+            [
+                "b69bde3b.8d7f2"
+            ]
+        ]
+    },
+    {
+        "id": "84ebcb91.f735f8",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Driveway",
+        "topic": "wemo",
+        "device": "12923ada.aec6f5",
+        "label": "Driveway Lights ",
+        "x": 139.5,
+        "y": 636,
+        "wires": [
+            [
+                "4b56fee0.ada5"
+            ]
+        ]
+    },
+    {
+        "id": "a85b572a.0b05d8",
+        "type": "debug",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 860.5,
+        "y": 833,
+        "wires": []
+    },
+    {
+        "id": "575ff2f8.87907c",
+        "type": "wemo in",
+        "z": "166b64b2.499b6b",
+        "name": "Garden",
+        "topic": "wemo",
+        "device": "60cd15f4.0b930c",
+        "label": "Garden lights",
+        "x": 124.5,
+        "y": 694,
+        "wires": [
+            [
+                "9e1cbec2.92ac5"
+            ]
+        ]
+    },
+    {
+        "id": "9e1cbec2.92ac5",
+        "type": "function",
+        "z": "166b64b2.499b6b",
+        "name": "Boolean Convert",
+        "func": "if(msg.payload.state==0) {\n    msg.payload=false;\n} else {\n    msg.payload=true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 379.5,
+        "y": 689,
+        "wires": [
+            [
+                "58658f22.f4e99"
+            ]
+        ]
+    },
+    {
+        "id": "58658f22.f4e99",
+        "type": "ui_switch",
+        "z": "166b64b2.499b6b",
+        "name": "",
+        "label": "garden",
+        "group": "54d85b28.c4cdb4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 545.5,
+        "y": 691,
+        "wires": [
+            [
+                "a85b572a.0b05d8",
+                "bdb09198.94783"
+            ]
+        ]
+    },
+    {
+        "id": "85a09288.2de",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Kitchen",
+        "device": "c6b92f6a.05b9b",
+        "label": "Kitchen Lights",
+        "x": 867.5,
+        "y": 390,
+        "wires": []
+    },
+    {
+        "id": "6d25df62.54322",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Bedroom",
+        "device": "d6bf8ccb.86918",
+        "label": "Bedroom light",
+        "x": 857.5,
+        "y": 342,
+        "wires": []
+    },
+    {
+        "id": "10ec81f1.c2840e",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Living Room",
+        "device": "27dcacac.58d6e4",
+        "label": "Living room light",
+        "x": 869.5,
+        "y": 450,
+        "wires": []
+    },
+    {
+        "id": "4d63f862.07cc28",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Prep Room",
+        "device": "bd46af78.ffe18",
+        "label": "Prep room light",
+        "x": 861.5,
+        "y": 497,
+        "wires": []
+    },
+    {
+        "id": "f85f194b.a83cf8",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Back Door",
+        "device": "f59bfade.0dccd8",
+        "label": "Back Door light",
+        "x": 864.5,
+        "y": 545,
+        "wires": []
+    },
+    {
+        "id": "bc206c12.7d8ec",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Front Door",
+        "device": "8be95386.dc5b9",
+        "label": "Front Door Lights",
+        "x": 866.5,
+        "y": 590,
+        "wires": []
+    },
+    {
+        "id": "cdb9d113.bf52e",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Driveway",
+        "device": "12923ada.aec6f5",
+        "label": "Driveway Lights ",
+        "x": 851.5,
+        "y": 632,
+        "wires": []
+    },
+    {
+        "id": "bdb09198.94783",
+        "type": "wemo out",
+        "z": "166b64b2.499b6b",
+        "name": "Garden",
+        "device": "60cd15f4.0b930c",
+        "label": "Garden lights",
+        "x": 854.5,
+        "y": 683,
+        "wires": []
+    },
+    {
+        "id": "5dfc2b00.3a04e4",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "Test Email Sender",
+        "func": "msg.topic=\"Test Email\";\nmsg.from=\"kkirkwood@hl14.com\";\nmsg.payload=\"This is a test Message - manually Triggered time \"+getSecSinceMid(new Date());\nmsg.Seconds=getSecSinceMid(new Date())\nreturn msg;\nfunction getSecSinceMid(d) {\n  var e = new Date(d);\n  return Math.floor((d - e.setHours(0,0,0,0))/1000);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 1340,
+        "wires": [
+            [
+                "50fbb23b.6ec2bc"
+            ]
+        ]
+    },
+    {
+        "id": "185f0637.a11eaa",
+        "type": "inject",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1340,
+        "wires": [
+            [
+                "5dfc2b00.3a04e4"
+            ]
+        ]
+    },
+    {
+        "id": "18c54418.6d5d8c",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "f6d66f88.9c22f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Office Door",
+        "label": "Door:",
+        "format": "{{msg.payload.Door}}",
+        "layout": "row-left",
+        "x": 1150,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "239df0cd.e573",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Get Humidity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 240,
+        "wires": [
+            [
+                "e2f829b.55e8bd8"
+            ]
+        ]
+    },
+    {
+        "id": "e2f829b.55e8bd8",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Outdoor Humidity",
+        "group": "9de92ee7.67eb4",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "units",
+        "format": "{{value|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#caea2a",
+            "#13c110",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f30460d7.7c318",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Signal Strength",
+        "group": "81eb75ad.8d5628",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig|number:0}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#b30024",
+            "#00e6ac",
+            "#52cb3a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1370,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e73fefc5.4fe0f",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Signal",
+        "group": "aa8051bb.d0602",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig|number:0}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#e10914",
+            "#73e600",
+            "#13b508"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1150,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "dd4e6173.8510a",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Signal",
+        "group": "a80ce50a.e6c408",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "units",
+        "format": "{{msg.payload.Sig}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#db3006",
+            "#87e22c",
+            "#10d126"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1160,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "545db3b.919614c",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Bathroom Signal",
+        "group": "c38b5de0.08e45",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig|number:0}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#b32400",
+            "#92e515",
+            "#01c107"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1400,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "96dc7a29.8a58a8",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "group": "b3747fff.0d073",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig|number:0}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#b30000",
+            "#b7e830",
+            "#50c511"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1400,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2deebe8c.d8ad02",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Office Signal",
+        "group": "f6d66f88.9c22f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#d40808",
+            "#73e600",
+            "#3fc819"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1400,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4ed53155.d457",
+        "type": "ui_switch",
+        "z": "7e4edf6c.b440d",
+        "name": "Disable Alert",
+        "label": "Disable Alert",
+        "tooltip": "",
+        "group": "aa8051bb.d0602",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "DisableAlert",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 450,
+        "y": 680,
+        "wires": [
+            [
+                "b97920d0.6ef1f"
+            ]
+        ]
+    },
+    {
+        "id": "6558cdcb.df2a04",
+        "type": "function",
+        "z": "7e4edf6c.b440d",
+        "name": "Save Temp Threshold",
+        "func": "var TempThreshold=msg.payload;\nmsg.TempThreshold=TempThreshold;\nglobal.set(\"TempThreshold\",TempThreshold);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 820,
+        "y": 600,
+        "wires": [
+            [
+                "fc58799.f1c0088"
+            ]
+        ]
+    },
+    {
+        "id": "b97920d0.6ef1f",
+        "type": "function",
+        "z": "7e4edf6c.b440d",
+        "name": "Record Disabled Flag",
+        "func": "var AlertDisabled=msg.payload;\nmsg.AlertDisabled=AlertDisabled;\nglobal.set(\"AlertDisabled\",AlertDisabled);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 680,
+        "wires": [
+            [
+                "d72f1938.c3c758"
+            ]
+        ]
+    },
+    {
+        "id": "fc58799.f1c0088",
+        "type": "debug",
+        "z": "7e4edf6c.b440d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "d72f1938.c3c758",
+        "type": "debug",
+        "z": "7e4edf6c.b440d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "cb92e664.231f18",
+        "type": "ui_dropdown",
+        "z": "7e4edf6c.b440d",
+        "name": "Low Temp Warning",
+        "label": "Low Temp Warning",
+        "tooltip": "",
+        "place": "Select Temp",
+        "group": "aa8051bb.d0602",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "0 C",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "1 C",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "2 C",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "3 C",
+                "value": 3,
+                "type": "num"
+            },
+            {
+                "label": "4 C",
+                "value": 4,
+                "type": "num"
+            },
+            {
+                "label": "5 C",
+                "value": 5,
+                "type": "num"
+            },
+            {
+                "label": "6 C",
+                "value": 6,
+                "type": "num"
+            },
+            {
+                "label": "10 C",
+                "value": 10,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "LowTempLimit",
+        "x": 470,
+        "y": 600,
+        "wires": [
+            [
+                "6558cdcb.df2a04"
+            ]
+        ]
+    },
+    {
+        "id": "3912b002.87b49",
+        "type": "switch",
+        "z": "eec0c63d.a292b8",
+        "name": "Check Temp Low Limit",
+        "property": "TempThreshold",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "payload.Temp",
+                "vt": "msg"
+            },
+            {
+                "t": "gt",
+                "v": "payload.Temp",
+                "vt": "msg"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 680,
+        "y": 760,
+        "wires": [
+            [
+                "b7735248.3117e"
+            ],
+            [
+                "eacbad0a.0f7f7"
+            ]
+        ]
+    },
+    {
+        "id": "eacbad0a.0f7f7",
+        "type": "debug",
+        "z": "eec0c63d.a292b8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "c470a250.550b8",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "Setup Warning",
+        "func": "var TempThreshold=global.get(\"TempThreshold\");\nif(typeof TempThreshold==\"undefined\") TempThreshold=0;\nmsg.payload.Warning=\"Warning Garage Temp is Below \"+TempThreshold;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 670,
+        "y": 940,
+        "wires": [
+            [
+                "2f1f5bf0.c6e3b4"
+            ]
+        ]
+    },
+    {
+        "id": "b7735248.3117e",
+        "type": "switch",
+        "z": "eec0c63d.a292b8",
+        "name": "Check Disabled Flag",
+        "property": "AlertDisabled",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 710,
+        "y": 860,
+        "wires": [
+            [
+                "c470a250.550b8"
+            ],
+            [
+                "eacbad0a.0f7f7"
+            ]
+        ]
+    },
+    {
+        "id": "bbac5aed.97d188",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Voltage Shed Solar System",
+        "group": "e97bf898.01de08",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Voltage Shed Solar System",
+        "label": "Volts",
+        "format": "{{msg.payload.Volts|number:2}}",
+        "min": 0,
+        "max": "20",
+        "colors": [
+            "#dce830",
+            "#00e608",
+            "#ca3838"
+        ],
+        "seg1": "11.5",
+        "seg2": "14.5",
+        "x": 1680,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "1c60fee.17c8d01",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Shed Temperature",
+        "group": "e97bf898.01de08",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1480,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "71fc40c.9aa11c",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "e97bf898.01de08",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update",
+        "label": "Last Update",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1460,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d67c0d41.7f0f9",
+        "type": "function",
+        "z": "eec0c63d.a292b8",
+        "name": "set low volt to zero",
+        "func": "var Voltage=msg.payload.Volts;\nif(Voltage < 0.05) msg.payload.Volts=0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1370,
+        "y": 660,
+        "wires": [
+            [
+                "bbac5aed.97d188",
+                "10be8b75.a08e25"
+            ]
+        ]
+    },
+    {
+        "id": "262ddd4c.38fd12",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Humidity Shed",
+        "group": "e97bf898.01de08",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Perecnt",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1490,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ebe1a4e2.a97808",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Battery Level Green House",
+        "group": "b90732cb.b8edd",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Battery Level",
+        "label": "Volts",
+        "format": "{{msg.payload.Battery|number:1}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#d9fb60",
+            "#35e61e",
+            "#ca3838"
+        ],
+        "seg1": "2.9",
+        "seg2": "4.3",
+        "x": 1560,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "2467ed7.4422012",
+        "type": "ui_chart",
+        "z": "eec0c63d.a292b8",
+        "name": "Temperature Green House",
+        "group": "b90732cb.b8edd",
+        "order": 5,
+        "width": "7",
+        "height": "7",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-10",
+        "ymax": "45",
+        "removeOlder": "48",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1560,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "927153b2.23894",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Signal Green House",
+        "group": "b90732cb.b8edd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig}}",
+        "min": "-110",
+        "max": "0",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1540,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "68636f8c.3bb22",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Extract Temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 1240,
+        "wires": [
+            [
+                "2467ed7.4422012"
+            ]
+        ]
+    },
+    {
+        "id": "34a18234.7c3a9e",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Battery Level shed",
+        "group": "e97bf898.01de08",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Battery Level ",
+        "label": "Volts",
+        "format": "{{msg.payload.Battery|number:1}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#e1ec4b",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "2.9",
+        "seg2": "4.2",
+        "x": 1660,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5d7de867.104008",
+        "type": "ui_text",
+        "z": "eec0c63d.a292b8",
+        "group": "b90732cb.b8edd",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Last Update Green House",
+        "label": "Last Update ",
+        "format": "{{msg.payload.Time}}",
+        "layout": "row-left",
+        "x": 1550,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "40bb86e4.e60658",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Humidity Green House",
+        "group": "b90732cb.b8edd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Percent",
+        "format": "{{msg.payload.Hum|number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1540,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "e7aba025.4e3e1",
+        "type": "ui_chart",
+        "z": "eec0c63d.a292b8",
+        "name": "Shed Voltage Chart",
+        "group": "e97bf898.01de08",
+        "order": 6,
+        "width": "7",
+        "height": "7",
+        "label": "Voltage ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "8",
+        "ymax": "17",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 1990,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10be8b75.a08e25",
+        "type": "change",
+        "z": "eec0c63d.a292b8",
+        "name": "Extract Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Volts",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1690,
+        "y": 720,
+        "wires": [
+            [
+                "e7aba025.4e3e1"
+            ]
+        ]
+    },
+    {
+        "id": "f2b3f2a7.cdb62",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Shed Signal",
+        "group": "e97bf898.01de08",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Signal",
+        "label": "db",
+        "format": "{{msg.payload.Sig}}",
+        "min": "-120",
+        "max": "0",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1980,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "6142e50.7c0271c",
+        "type": "ui_gauge",
+        "z": "eec0c63d.a292b8",
+        "name": "Green House Temperature",
+        "group": "b90732cb.b8edd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Degrees C",
+        "format": "{{msg.payload.Temp|number:1}}",
+        "min": "-10",
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1950,
+        "y": 1140,
+        "wires": []
+    }
+]
